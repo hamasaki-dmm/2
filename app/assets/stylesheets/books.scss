@@ -1,0 +1,26 @@
+// Place all the styles related to the books controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* show */
+.s-book-user-name {
+	width: 40px;
+	text-align: center;
+	margin: 0;
+}
+
+
+/* index */
+.i-book-opinion {
+	width: 57%;
+}
+
+.i-book-title {
+	width: 30%;
+}
+
+/* edit */
+.e-link {
+	margin-top: 10px;
+	padding-left: 10px;
+}

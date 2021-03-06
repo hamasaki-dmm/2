@@ -1,0 +1,30 @@
+<div class="row">
+	<div class="col-xs-3">
+		<%= render 'users/user_info', user: @user, new_book: @new_book %>
+	</div>
+	<div class="col-xs-9">
+		<h2>Book detail</h2>
+		<table class="table">
+			<tbody>
+				<tr>
+					<td>
+						<%= link_to user_path(@user) do %>
+							<%= attachment_image_tag @user, :profile_image, :fill, 40, 40, fallback:'no_image.jpg', size:'40x40' %>
+							<p class="s-book-user-name"><%= @user.name %></p>
+						<% end %>
+					</td>
+					<td><span class="td-center"><%= @book.title %></span></td>
+					<td><span class="td-center"><%= @book.body %></span></td>
+					<% if @user == current_user %>
+						<td>
+							<%= link_to 'Edit', edit_book_path(@book),  class:"btn btn-success" %>
+						</td>
+						<td>
+							<%= link_to 'Destroy', book_path(@book), method: :delete, class:"btn btn-danger", "data-confirm":"本当に削除しますか？" %>
+						</td>
+					<% end %>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>

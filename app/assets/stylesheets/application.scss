@@ -1,0 +1,116 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+
+ /* common */
+
+ * {
+ 	margin: 0;
+ 	padding: 0;
+ 	box-sizing: border-box;
+ }
+
+a:visited {
+	color: #666;
+}
+
+
+/* header */
+.header-text {
+	color: white !important;
+	margin: 0;
+	font-size: 20px;
+}
+
+
+/* body */
+.body {
+	padding-top: 50px;
+}
+
+.body > p {
+	padding: 0;
+}
+
+.user-data {
+	font-weight: bold;
+}
+
+
+/* footer */
+footer > p {
+	font-size: 14px;
+}
+
+
+/* user_info */
+.edit-btn, .new-book-btn {
+	display: block;
+	position: relative;
+	width: 114%;
+	left: -16px;
+}
+
+.form-width {
+	position: relative;
+	width: 114%;
+	left: -16px;
+}
+
+.label-position {
+	position: relative;
+	left: -16px;
+}
+
+
+/* devise view */
+.field {
+	margin-bottom: 10px;
+}
+
+.form-detail {
+	height: 26px;
+	width: 152px;
+}
+
+#error_explanation {
+	color: red;
+}
+
+#error_explanation > ul {
+	margin: 0 33px 10px;
+	padding-left: 40px;
+	font-size: 13px;
+	font-family: verdana, arial, helvetica, sans-serif;
+}
+
+.notice, .success {
+	color: green;
+	font-family: verdana, arial, helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
