@@ -2,7 +2,7 @@
 	<div class="col-xs-6 col-xs-offset-3">
 		<h1>Editing Book</h1>
 		<%= render 'shared/error_messages', object: @book %>
-		<%= form_for @book do |f| %>
+		<%= form_with model: @book do |f| %>
 			<div class="form-group">
 				<%= f.label :title %>
 				<%= f.text_field :title, class:"form-control" %>
